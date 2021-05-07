@@ -32,6 +32,9 @@ inputs:
     description: 'ECS Cluster to run task on'
     required: false
     default: 'default'
+  ecsvpc:
+    description: 'ECS VPC to run task on'
+    required: true
   task_name:
     description: 'Name of existing ECS task, in the form of `name[:version]`,  to execute instead of defining a new task.'
     required: false

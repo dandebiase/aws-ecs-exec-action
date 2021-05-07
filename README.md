@@ -27,6 +27,7 @@ Usage
     with:
       task_name: my-ecs-task
       aws_role_arn: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+      ecsvpc: wisr-dev-vpc-private-us-east-2
       aws_external_id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}
       wait: true
       timeout: 600

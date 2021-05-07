@@ -207,4 +207,4 @@ fi
 
 ECS_EXEC_WAIT=
 ! "${INPUT_WAIT}" || ECS_EXEC_WAIT='--wait'
-exec /app/ecs-exec ${ECS_EXEC_DEBUG} ${ECS_EXEC_WAIT} --timeout "${INPUT_TIMEOUT}" --cluster "${INPUT_CLUSTER:=default}" "${INPUT_TASK_NAME}"
+exec /app/ecs-exec ${ECS_EXEC_DEBUG} ${ECS_EXEC_WAIT} --timeout "${INPUT_TIMEOUT}" --cluster "${INPUT_CLUSTER:=default}" --ecsvpc "${INPUT_ECSVPC}" "${INPUT_TASK_NAME}"
